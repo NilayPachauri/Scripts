@@ -13,17 +13,27 @@ TEXT_EDITOR=vim
 # Erase all of the previous git configurations
 > ~/.gitconfig
 
-# Generate SSH Key to Link with Github Profile
+# Generate SSH Key to Link with Github Profile using Email as a label
 ssh-keygen -t rsa -b 2048 -C "$EMAIL"
 
-# Global Git Configurations
+# Set your name and email
 git config --global user.name "$NAME"
 git config --global user.email "$EMAIL"
+
+# Sets output to be pretty colored
 git config --global color.ui.auto
+
+# Chooses the editor to edit the commit messages
 git config --global core.editor $TEXT_EDITOR
+
+# LF Normalization (Linux and MacOS)
 git config --global core.autocrlf input
+
+# Push Setting
 git config --global push.default simple
 
+
+# Instructions on how to link machine with GitHub
 echo "Go to your SSH Key Settings on GitHub"
 echo "Click on Add SSH Key"
 echo "Provide a name for the key, such as $NAME Key"

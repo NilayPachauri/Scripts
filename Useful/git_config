@@ -3,8 +3,8 @@
 # git_config - A script to configure the your git credentials
 
 ##### Constants
-NAME="Nilay Pachauri"
-EMAIL="pachauri@usc.edu"
+NAME="<Insert Name>"
+EMAIL="<Insert GitHub email>"
 TEXT_EDITOR=vim
 
 

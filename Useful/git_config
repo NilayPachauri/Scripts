@@ -5,7 +5,7 @@
 ##### Constants
 NAME="<Insert Name>"
 EMAIL="<Insert GitHub email>"
-TEXT_EDITOR=vim
+TEXT_EDITOR=nano
 
 
 ##### Main
